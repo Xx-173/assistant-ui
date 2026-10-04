@@ -1,5 +1,13 @@
 # @assistant-ui/eve
 
+## 0.0.22
+
+### Patch Changes
+
+- [#8750](https://github.com/assistant-ui/assistant-ui/pull/8750) [`cb0bead`](https://github.com/assistant-ui/assistant-ui/commit/cb0beada7472390bd537167bdba70d9eba931c51) - a failed eve turn now ends as an error carrying eve's failure code and message, and a cancelled one as cancelled, instead of the cancelled or complete status eve's reducer left them with ([@okisdev](https://github.com/okisdev))
+- Updated dependencies [[`fd444e4`](https://github.com/assistant-ui/assistant-ui/commit/fd444e4e94c4b49aba0ad734e0f8a0a3cde1bb22), [`791d240`](https://github.com/assistant-ui/assistant-ui/commit/791d240209aa5e270a785260cab127b965f0500f), [`ec48da2`](https://github.com/assistant-ui/assistant-ui/commit/ec48da206fc4d9e7c991a06d91f7c224aa1e3089), [`451a76c`](https://github.com/assistant-ui/assistant-ui/commit/451a76c08cd67311eed08102e923fa83f45c4f5e), [`1f77d04`](https://github.com/assistant-ui/assistant-ui/commit/1f77d04435f71476172a6d1ffca871da1a0c933a), [`aecb5eb`](https://github.com/assistant-ui/assistant-ui/commit/aecb5eb749e915920682bdcffddc54668f911aab), [`77a98c1`](https://github.com/assistant-ui/assistant-ui/commit/77a98c1ff8943822b4d6dec84e927f3b85a37956)]:
+  - @assistant-ui/core@0.3.24
+
 ## 0.0.21
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @assistant-ui/react-ag-ui
 
+## 0.0.65
+
+### Patch Changes
+
+- [#8797](https://github.com/assistant-ui/assistant-ui/pull/8797) [`ef266b4`](https://github.com/assistant-ui/assistant-ui/commit/ef266b4de9442107d459a1c79183c3457dc94e10) - opencode and ag-ui reasoning parts, and opencode tool call parts, now carry the start and end times their sources record ([@okisdev](https://github.com/okisdev))
+- Updated dependencies [[`fd444e4`](https://github.com/assistant-ui/assistant-ui/commit/fd444e4e94c4b49aba0ad734e0f8a0a3cde1bb22), [`791d240`](https://github.com/assistant-ui/assistant-ui/commit/791d240209aa5e270a785260cab127b965f0500f), [`70c9a6e`](https://github.com/assistant-ui/assistant-ui/commit/70c9a6e3cd7ab73071f0b4edf1040a035773ffe7), [`ec48da2`](https://github.com/assistant-ui/assistant-ui/commit/ec48da206fc4d9e7c991a06d91f7c224aa1e3089), [`48601e4`](https://github.com/assistant-ui/assistant-ui/commit/48601e40fed32f8ec469fd1f17a64ad24a3e7484), [`451a76c`](https://github.com/assistant-ui/assistant-ui/commit/451a76c08cd67311eed08102e923fa83f45c4f5e), [`1f77d04`](https://github.com/assistant-ui/assistant-ui/commit/1f77d04435f71476172a6d1ffca871da1a0c933a), [`aecb5eb`](https://github.com/assistant-ui/assistant-ui/commit/aecb5eb749e915920682bdcffddc54668f911aab), [`77a98c1`](https://github.com/assistant-ui/assistant-ui/commit/77a98c1ff8943822b4d6dec84e927f3b85a37956)]:
+  - @assistant-ui/core@0.3.24
+  - @assistant-ui/react-generative-ui@0.0.24
+  - assistant-stream@0.3.48
+
 ## 0.0.64
 
 ### Patch Changes

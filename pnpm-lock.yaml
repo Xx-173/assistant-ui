@@ -4015,7 +4015,7 @@ importers:
         specifier: ^4.0.126
         version: 4.0.126(react@19.3.0)(zod@4.6.5)
       '@assistant-ui/core':
-        specifier: ^0.3.23
+        specifier: ^0.3.24
         version: link:../core
       '@assistant-ui/store':
         specifier: ^0.3.17
@@ -4027,7 +4027,7 @@ importers:
         specifier: workspace:^
         version: link:../cloud
       assistant-stream:
-        specifier: ^0.3.47
+        specifier: ^0.3.48
         version: link:../assistant-stream
     devDependencies:
       '@assistant-ui/x-buildutils':
@@ -4208,7 +4208,7 @@ importers:
   packages/core:
     dependencies:
       assistant-stream:
-        specifier: ^0.3.47
+        specifier: ^0.3.48
         version: link:../assistant-stream
       nanoid:
         specifier: ^6.0.1
@@ -4276,7 +4276,7 @@ importers:
   packages/eve:
     dependencies:
       '@assistant-ui/core':
-        specifier: ^0.3.23
+        specifier: ^0.3.24
         version: link:../core
       '@assistant-ui/store':
         specifier: ^0.3.17
@@ -4428,7 +4428,7 @@ importers:
   packages/react:
     dependencies:
       '@assistant-ui/core':
-        specifier: ^0.3.23
+        specifier: ^0.3.24
         version: link:../core
       '@assistant-ui/store':
         specifier: ^0.3.17
@@ -4440,7 +4440,7 @@ importers:
         specifier: ^0.2.5
         version: link:../cloud
       assistant-stream:
-        specifier: ^0.3.47
+        specifier: ^0.3.48
         version: link:../assistant-stream
       radix-ui:
         specifier: ^1.6.7
@@ -4498,16 +4498,16 @@ importers:
   packages/react-a2a:
     dependencies:
       '@assistant-ui/core':
-        specifier: ^0.3.23
+        specifier: ^0.3.24
         version: link:../core
       '@assistant-ui/react-generative-ui':
-        specifier: ^0.0.23
+        specifier: ^0.0.24
         version: link:../react-generative-ui
       '@assistant-ui/store':
         specifier: ^0.3.17
         version: link:../store
       assistant-stream:
-        specifier: ^0.3.47
+        specifier: ^0.3.48
         version: link:../assistant-stream
     devDependencies:
       '@assistant-ui/x-buildutils':
@@ -4544,16 +4544,16 @@ importers:
         specifier: ^0.0.59
         version: 0.0.59
       '@assistant-ui/core':
-        specifier: ^0.3.23
+        specifier: ^0.3.24
         version: link:../core
       '@assistant-ui/react-generative-ui':
-        specifier: ^0.0.23
+        specifier: ^0.0.24
         version: link:../react-generative-ui
       '@assistant-ui/store':
         specifier: ^0.3.17
         version: link:../store
       assistant-stream:
-        specifier: ^0.3.47
+        specifier: ^0.3.48
         version: link:../assistant-stream
       fast-json-patch:
         specifier: ^3.1.1
@@ -4590,7 +4590,7 @@ importers:
   packages/react-ai-sdk:
     dependencies:
       '@assistant-ui/ai-sdk':
-        specifier: ^0.0.10
+        specifier: ^0.0.11
         version: link:../ai-sdk
       ai:
         specifier: ^7.0.101
@@ -4728,7 +4728,7 @@ importers:
         specifier: ^7.0.15
         version: 7.0.15
       assistant-stream:
-        specifier: ^0.3.47
+        specifier: ^0.3.48
         version: link:../assistant-stream
     devDependencies:
       '@assistant-ui/react':
@@ -4845,7 +4845,7 @@ importers:
   packages/react-ink:
     dependencies:
       '@assistant-ui/core':
-        specifier: ^0.3.23
+        specifier: ^0.3.24
         version: link:../core
       '@assistant-ui/store':
         specifier: ^0.3.17
@@ -4857,7 +4857,7 @@ importers:
         specifier: workspace:^
         version: link:../cloud
       assistant-stream:
-        specifier: ^0.3.47
+        specifier: ^0.3.48
         version: link:../assistant-stream
       diff:
         specifier: ^9.0.0
@@ -4903,7 +4903,7 @@ importers:
   packages/react-ink-markdown:
     dependencies:
       '@assistant-ui/core':
-        specifier: ^0.3.23
+        specifier: ^0.3.24
         version: link:../core
       '@assistant-ui/store':
         specifier: ^0.3.17
@@ -5181,7 +5181,7 @@ importers:
   packages/react-native:
     dependencies:
       '@assistant-ui/core':
-        specifier: ^0.3.23
+        specifier: ^0.3.24
         version: link:../core
       '@assistant-ui/store':
         specifier: ^0.3.17
@@ -5193,7 +5193,7 @@ importers:
         specifier: workspace:^
         version: link:../cloud
       assistant-stream:
-        specifier: ^0.3.47
+        specifier: ^0.3.48
         version: link:../assistant-stream
     devDependencies:
       '@assistant-ui/x-buildutils':
@@ -5267,7 +5267,7 @@ importers:
   packages/react-opencode:
     dependencies:
       '@assistant-ui/core':
-        specifier: ^0.3.23
+        specifier: ^0.3.24
         version: link:../core
       '@assistant-ui/store':
         specifier: ^0.3.17
@@ -5313,7 +5313,7 @@ importers:
   packages/react-pi:
     dependencies:
       '@assistant-ui/core':
-        specifier: ^0.3.23
+        specifier: ^0.3.24
         version: link:../core
       '@assistant-ui/store':
         specifier: ^0.3.17
@@ -5325,7 +5325,7 @@ importers:
         specifier: '*'
         version: link:../cloud
       assistant-stream:
-        specifier: ^0.3.47
+        specifier: ^0.3.48
         version: link:../assistant-stream
     devDependencies:
       '@assistant-ui/react':
@@ -5522,7 +5522,7 @@ importers:
   packages/svelte:
     dependencies:
       '@assistant-ui/core':
-        specifier: ^0.3.23
+        specifier: ^0.3.24
         version: link:../core
       '@assistant-ui/store':
         specifier: ^0.3.17
@@ -5813,7 +5813,7 @@ importers:
   packages/vue:
     dependencies:
       '@assistant-ui/core':
-        specifier: ^0.3.23
+        specifier: ^0.3.24
         version: link:../core
       '@assistant-ui/store':
         specifier: ^0.3.17
@@ -20643,10 +20643,6 @@ packages:
 
   undici@8.11.2:
     resolution: {integrity: sha512-u4UB2/IrKdU6lFxumHmmo1a3fCQO5tzQllRorfoRS63txhrB7xTpSn1PftwC4qEHkOaqP95fCWW4lJzwErwzhQ==}
-    engines: {node: '>=22.19.0'}
-
-  undici@8.9.0:
-    resolution: {integrity: sha512-aWZpUj7XoGonMClx4gdDRfgBjqeA+F473aDmROQQbM9n6PRfK/u1q/a0X4wMTgcHfT8H6fpbt98PFuDUwFg2YA==}
     engines: {node: '>=22.19.0'}
 
   unenv@2.0.0-rc.24:
@@ -39203,8 +39199,6 @@ snapshots:
   undici@8.10.2: {}
 
   undici@8.11.2: {}
-
-  undici@8.9.0: {}
 
   unenv@2.0.0-rc.24:
     dependencies:

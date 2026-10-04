@@ -1,5 +1,14 @@
 # @assistant-ui/ai-sdk
 
+## 0.0.11
+
+### Patch Changes
+
+- [#8796](https://github.com/assistant-ui/assistant-ui/pull/8796) [`fd444e4`](https://github.com/assistant-ui/assistant-ui/commit/fd444e4e94c4b49aba0ad734e0f8a0a3cde1bb22) - a tool approval can ask several questions at once, or let one question take several answers: `display: "questions"` with `approval.questions`, answered through `respondToApproval({ answers })` keyed by question id, validated before it reaches `onRespondToToolApproval` and recorded on `approval.answers`; the AI SDK converter reads `questions` and `answers` from the approval descriptor when a response handler is set, and the cloud format keeps them ([@okisdev](https://github.com/okisdev))
+- Updated dependencies [[`fd444e4`](https://github.com/assistant-ui/assistant-ui/commit/fd444e4e94c4b49aba0ad734e0f8a0a3cde1bb22), [`791d240`](https://github.com/assistant-ui/assistant-ui/commit/791d240209aa5e270a785260cab127b965f0500f), [`ec48da2`](https://github.com/assistant-ui/assistant-ui/commit/ec48da206fc4d9e7c991a06d91f7c224aa1e3089), [`451a76c`](https://github.com/assistant-ui/assistant-ui/commit/451a76c08cd67311eed08102e923fa83f45c4f5e), [`1f77d04`](https://github.com/assistant-ui/assistant-ui/commit/1f77d04435f71476172a6d1ffca871da1a0c933a), [`aecb5eb`](https://github.com/assistant-ui/assistant-ui/commit/aecb5eb749e915920682bdcffddc54668f911aab), [`77a98c1`](https://github.com/assistant-ui/assistant-ui/commit/77a98c1ff8943822b4d6dec84e927f3b85a37956)]:
+  - @assistant-ui/core@0.3.24
+  - assistant-stream@0.3.48
+
 ## 0.0.10
 
 ### Patch Changes

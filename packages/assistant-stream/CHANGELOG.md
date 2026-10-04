@@ -1,5 +1,11 @@
 # assistant-stream
 
+## 0.3.48
+
+### Patch Changes
+
+- [#8794](https://github.com/assistant-ui/assistant-ui/pull/8794) [`451a76c`](https://github.com/assistant-ui/assistant-ui/commit/451a76c08cd67311eed08102e923fa83f45c4f5e) - reasoning parts carry an optional `timing` with their start and end times, typed as the new `MessagePartTiming` that `ToolCallTiming` now aliases, so a host can show how long its agent thought; the assistant-stream accumulator stamps it while reasoning streams, joined reasoning parts and the cloud format keep it, and a `MessagePrimitive.GroupedParts` group reports the span of its timed parts as `timing` ([@okisdev](https://github.com/okisdev))
+
 ## 0.3.47
 
 ### Patch Changes

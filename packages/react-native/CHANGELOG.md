@@ -1,5 +1,24 @@
 # @assistant-ui/react-native
 
+## 0.1.46
+
+### Patch Changes
+
+- [#8796](https://github.com/assistant-ui/assistant-ui/pull/8796) [`fd444e4`](https://github.com/assistant-ui/assistant-ui/commit/fd444e4e94c4b49aba0ad734e0f8a0a3cde1bb22) - a tool approval can ask several questions at once, or let one question take several answers: `display: "questions"` with `approval.questions`, answered through `respondToApproval({ answers })` keyed by question id, validated before it reaches `onRespondToToolApproval` and recorded on `approval.answers`; the AI SDK converter reads `questions` and `answers` from the approval descriptor when a response handler is set, and the cloud format keeps them ([@okisdev](https://github.com/okisdev))
+
+- [#8798](https://github.com/assistant-ui/assistant-ui/pull/8798) [`ec48da2`](https://github.com/assistant-ui/assistant-ui/commit/ec48da206fc4d9e7c991a06d91f7c224aa1e3089) - a thread can open on its latest page and load older messages on demand: the external store adapter takes `hasEarlier` and `onLoadEarlier`, the runtime surfaces them as `thread.hasEarlier`, `thread.isLoadingEarlier` and `aui.thread.loadEarlier()` with one load in flight at a time, `ThreadPrimitive.LoadEarlier` loads the next page, `ThreadPrimitive.Viewport` keeps the visible messages in place when it lands above them, and the React Native `ThreadPrimitive.MessagesFlatList` pages through the runtime when it gets no `history` prop ([@okisdev](https://github.com/okisdev))
+
+- [#8794](https://github.com/assistant-ui/assistant-ui/pull/8794) [`451a76c`](https://github.com/assistant-ui/assistant-ui/commit/451a76c08cd67311eed08102e923fa83f45c4f5e) - reasoning parts carry an optional `timing` with their start and end times, typed as the new `MessagePartTiming` that `ToolCallTiming` now aliases, so a host can show how long its agent thought; the assistant-stream accumulator stamps it while reasoning streams, joined reasoning parts and the cloud format keep it, and a `MessagePrimitive.GroupedParts` group reports the span of its timed parts as `timing` ([@okisdev](https://github.com/okisdev))
+
+- [#8801](https://github.com/assistant-ui/assistant-ui/pull/8801) [`75363d5`](https://github.com/assistant-ui/assistant-ui/commit/75363d52758bab47acbdef9122120fde69165f3e) - react native threads can virtualize per row with `ThreadPrimitive.RowsFlatList`, which renders each row with `ThreadPrimitive.Row`, supports `inverted` and pages earlier messages ([@okisdev](https://github.com/okisdev))
+
+- [#8795](https://github.com/assistant-ui/assistant-ui/pull/8795) [`1f77d04`](https://github.com/assistant-ui/assistant-ui/commit/1f77d04435f71476172a6d1ffca871da1a0c933a) - the composer trigger popover primitives and their adapter, item, category and directive formatter types get stable names; the `Unstable_` names stay as deprecated aliases, and the trigger popover hooks stay unstable ([@okisdev](https://github.com/okisdev))
+
+- [#8799](https://github.com/assistant-ui/assistant-ui/pull/8799) [`aecb5eb`](https://github.com/assistant-ui/assistant-ui/commit/aecb5eb749e915920682bdcffddc54668f911aab) - a long thread can be virtualized per part instead of per message: `createThreadRowsSelector` flattens the thread for `useAuiState` into stable rows (a user message, each top-level part group of an assistant message, a turn end) that keep their identity while tokens stream, and `ThreadPrimitive.Row` renders one row with only the scopes it needs; a turn-end row carries the turn's start time and, once the turn completes, the latest end its messages record, so a turn footer can show how long the agent worked ([@okisdev](https://github.com/okisdev))
+- Updated dependencies [[`fd444e4`](https://github.com/assistant-ui/assistant-ui/commit/fd444e4e94c4b49aba0ad734e0f8a0a3cde1bb22), [`791d240`](https://github.com/assistant-ui/assistant-ui/commit/791d240209aa5e270a785260cab127b965f0500f), [`ec48da2`](https://github.com/assistant-ui/assistant-ui/commit/ec48da206fc4d9e7c991a06d91f7c224aa1e3089), [`451a76c`](https://github.com/assistant-ui/assistant-ui/commit/451a76c08cd67311eed08102e923fa83f45c4f5e), [`1f77d04`](https://github.com/assistant-ui/assistant-ui/commit/1f77d04435f71476172a6d1ffca871da1a0c933a), [`aecb5eb`](https://github.com/assistant-ui/assistant-ui/commit/aecb5eb749e915920682bdcffddc54668f911aab), [`77a98c1`](https://github.com/assistant-ui/assistant-ui/commit/77a98c1ff8943822b4d6dec84e927f3b85a37956)]:
+  - @assistant-ui/core@0.3.24
+  - assistant-stream@0.3.48
+
 ## 0.1.45
 
 ### Patch Changes
